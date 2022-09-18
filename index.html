@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="display" readonly>
+
+            <button id="clear-all" onclick="clearAll()">CE</button>
+
+            <button id="clear">
+                <i class="fa-solid fa-delete-left"></i>
+            </button>
+
+            <button id="modulus" onclick="insertBtn('%')">
+                <i class="fa-solid fa-percent"></i>
+            </button>
+
+            <button id="divide" onclick="insertBtn('/')">
+                <i class="fa-solid fa-divide"></i>
+            </button>
+
+            <button id="seven" onclick="insertBtn(7)">
+                <i class="fa-solid fa-7"></i>
+            </button>
+
+            <button id="eight" onclick="insertBtn(8)">
+                <i class="fa-solid fa-8"></i>
+            </button>
+
+            <button id="nine" onclick="insertBtn(9)">
+                <i class="fa-solid fa-9"></i>
+            </button>
+
+            <button id="multiply" onclick="insertBtn('*')">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <button id="four" onclick="insertBtn(4)">
+                <i class="fa-solid fa-4"></i>
+            </button>
+
+            <button id="five" onclick="insertBtn(5)">
+                <i class="fa-solid fa-5"></i>
+            </button>
+
+            <button id="six" onclick="insertBtn(6)">
+                <i class="fa-solid fa-6"></i>
+            </button>
+
+            <button id="minus" onclick="insertBtn('-')">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+
+            <button id="one" onclick="insertBtn(1)">
+                <i class="fa-solid fa-1"></i>
+            </button>
+
+            <button id="two" onclick="insertBtn(2)">
+                <i class="fa-solid fa-2"></i>
+            </button>
+
+            <button id="three" onclick="insertBtn(3)">
+                <i class="fa-solid fa-3"></i>
+            </button>
+
+            <button id="plus" onclick="insertBtn('+')">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <button id="zero" onclick="insertBtn(0)">
+                <i class="fa-solid fa-0"></i>
+            </button>
+
+            <button id="point" onclick="insertBtn('.')">.</button>
+
+            <button id="equal">
+                <i class="fa-solid fa-equals"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+
+</html>
